@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Coinstead's plain-language privacy policy explains local storage, statement imports, Apple Intelligence, the optional ChatGPT handoff, exports, and network communication.">
+  <meta name="theme-color" content="#021d17">
+  <title>Privacy Policy — Coinstead</title>
+  <link rel="icon" href="assets/coinstead-icon.png">
+  <link rel="apple-touch-icon" href="assets/coinstead-icon.png">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Coinstead home">
+        <img src="assets/coinstead-icon.png" alt="" width="42" height="42">
+        <span>Coinstead</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation"><span></span></button>
+      <nav class="site-nav" id="site-navigation" data-open="false" aria-label="Primary navigation">
+        <a href="index.html">Overview</a>
+        <a href="index.html#features">Features</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section page-hero" aria-labelledby="page-title">
+      <p class="eyebrow">Plain-language policy</p>
+      <h1 id="page-title">Privacy, without the fine-print fog.</h1>
+      <p class="lede">Coinstead is designed to keep financial records local and put sharing decisions in your hands. This policy explains exactly what the app stores, which optional actions can send information elsewhere, and what Coinstead does not collect.</p>
+      <p class="updated">Effective October 21, 2026 · Based on a review of the Coinstead 1.0 iPhone code</p>
+    </section>
+
+    <section class="section section-compact" aria-label="Privacy summary">
+      <div class="privacy-grid">
+        <article class="summary-card">
+          <strong>On your iPhone</strong>
+          <p>Your financial records and settings are stored in Coinstead’s local database.</p>
+        </article>
+        <article class="summary-card">
+          <strong>No Coinstead account</strong>
+          <p>The app has no sign-in, advertising, analytics SDK, or behavioural tracking.</p>
+        </article>
+        <article class="summary-card">
+          <strong>AI is optional</strong>
+          <p>Apple Intelligence runs through Apple’s on-device model; ChatGPT sharing is user-initiated.</p>
+        </article>
+        <article class="summary-card">
+          <strong>Exports are yours</strong>
+          <p>You choose where backups and transaction exports are saved or shared.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-compact">
+      <div class="policy-layout">
+        <aside class="policy-toc" aria-label="Privacy policy contents">
+          <strong>On this page</strong>
+          <a href="#scope">1. Scope</a>
+          <a href="#stored-data">2. Data stored locally</a>
+          <a href="#statements">3. Statement imports</a>
+          <a href="#classification">4. Categorization</a>
+          <a href="#apple-intelligence">5. Apple Intelligence</a>
+          <a href="#chatgpt">6. ChatGPT handoff</a>
+          <a href="#network">7. Network communication</a>
+          <a href="#exports">8. Exports and backups</a>
+          <a href="#security">9. App lock and device backups</a>
+          <a href="#control">10. Retention and deletion</a>
+          <a href="#support-privacy">11. Support messages</a>
+          <a href="#website">12. This website</a>
+          <a href="#disclaimer">13. Financial information</a>
+          <a href="#changes">14. Changes and contact</a>
+        </aside>
+
+        <div class="policy-content">
+          <article class="content-card" id="scope">
+            <h2>1. Scope</h2>
+            <p>This policy covers the Coinstead iPhone app and this website. Coinstead is free, requires no account, and contains no advertising. The app is built as a personal, local-first financial-information tool.</p>
+            <p>“Local-first” means Coinstead’s normal records are stored on your device and the app does not operate a Coinstead cloud account or synchronization service. It does not mean information can never leave the device: exports, backups, external links, the iOS share sheet, support email, and the optional ChatGPT handoff are controlled exceptions explained below.</p>
+          </article>
+
+          <article class="content-card" id="stored-data">
+            <h2>2. Data stored locally</h2>
+            <p>Coinstead stores the information needed to provide its features in an SQLite database inside the app’s private iOS container. Depending on what you use, this can include:</p>
+            <ul>
+              <li>transaction dates, descriptions, normalized merchant names, amounts, directions, categories, notes, account labels, and classification status;</li>
+              <li>statement metadata such as the filename, file type, import date, statement period, account label, a content hash used to prevent duplicate imports, and related transaction identifiers;</li>
+              <li>income entries, starting savings and investment balances, monthly housing expenses, categories, allocation goals, recurring plan items, debts, and debt-plan settings;</li>
+              <li>merchant-matching rules, category preferences, pending classification suggestions, and records of categories you intentionally deleted;</li>
+              <li>saved Garden Planning purchase scenarios and the assumptions entered for them; and</li>
+              <li>app preferences and local setup state.</li>
+            </ul>
+            <p>This data is used on-device to calculate summaries, compare activity with your goals, detect duplicate imports, classify merchants, preserve review progress, estimate debt timelines, and run purchase illustrations.</p>
+          </article>
+
+          <article class="content-card" id="statements">
+            <h2>3. Statement imports</h2>
+            <p>Coinstead can read CSV files, plain-text files, and PDFs that contain extractable text. When you choose a statement, the app reads the file and parses it on the device. The local database stores extracted transaction information and statement metadata; it does not store the original statement file itself.</p>
+            <p>If you open a supported statement through the iOS share sheet, iOS provides Coinstead with a private temporary Inbox copy. Coinstead reads that copy and deletes it from the app’s temporary Inbox. It does not delete the original statement in Files, Downloads, email, or another storage provider.</p>
+            <p>If you import through Coinstead’s file picker, the selected source file remains where you stored it. Coinstead accesses it using iOS document permissions only long enough to read it.</p>
+            <div class="notice">A text-readable PDF is different from a scanned image. Coinstead does not send scans to an external optical-character-recognition service.</div>
+          </article>
+
+          <article class="content-card" id="classification">
+            <h2>4. Automatic and manual categorization</h2>
+            <p>Coinstead first uses local rules: built-in merchant patterns, categories you keep active, merchant mappings you edit, and your prior confirmed categorizations. These checks do not require a network connection.</p>
+            <p>Transactions are saved before review. If a category is unresolved, the transaction can temporarily use “Other” while remaining in the Review tab. Confirming a category updates the existing local record; it does not create a second transaction. Pending suggestions and review progress are also stored locally so you can stop and return later.</p>
+          </article>
+
+          <article class="content-card" id="apple-intelligence">
+            <h2>5. Apple Intelligence</h2>
+            <p>On a compatible iPhone with a supported version of iOS, you may ask Apple Intelligence to suggest categories for unresolved transactions. Coinstead uses Apple’s Foundation Models framework and the device’s on-device language model.</p>
+            <p>For this classification task, Coinstead provides the model with unresolved merchant descriptions, normalized merchant text, transaction type, and the names of your active categories. It does not provide the original statement file. Coinstead requests suggestions in small batches, stores the returned suggestions locally, and waits for you to approve or reject them.</p>
+            <p>Apple Intelligence availability and system behaviour are controlled by Apple and your device settings. Apple’s handling of Apple services is described in the <a href="https://www.apple.com/ca/legal/privacy/en-ww/">Apple Privacy Policy</a>.</p>
+          </article>
+
+          <article class="content-card" id="chatgpt">
+            <h2>6. Optional ChatGPT handoff</h2>
+            <p>Coinstead does not call the OpenAI API or send data to ChatGPT automatically. The handoff begins only when you choose to share a classification request or copy it and open ChatGPT.</p>
+            <p>The generated request contains all unresolved transaction descriptions and the names of your active Coinstead categories. It does not include transaction amounts, dates, balances, account labels, or the original statement file. If a merchant description itself contains personal information, that text will still be present.</p>
+            <p>Using “Share Classification Request” opens the iOS share sheet, where you choose the receiving app or person. Using “Copy Request &amp; Open ChatGPT” places the request on the system clipboard and opens chatgpt.com. Clipboard content can remain available to the operating system and other permitted apps until it is replaced or cleared.</p>
+            <p>Anything you send to ChatGPT or another destination is governed by that recipient’s terms and privacy practices, including the <a href="https://openai.com/policies/privacy-policy/">OpenAI Privacy Policy</a>. You paste the response back into Coinstead; the resulting suggestions are stored locally and remain subject to your review.</p>
+          </article>
+
+          <article class="content-card" id="network">
+            <h2>7. Network communication</h2>
+            <p>The Coinstead iPhone workflow has no Coinstead-operated server, user account, cloud-sync service, advertising connection, or analytics endpoint. It does not automatically upload financial records to the developer.</p>
+            <p>Network activity can occur when you deliberately:</p>
+            <ul>
+              <li>open ChatGPT for the optional handoff;</li>
+              <li>open educational links to Government of Canada resources from the app;</li>
+              <li>save or share an export through a cloud-storage provider, email app, or another destination you select; or</li>
+              <li>send a support email.</li>
+            </ul>
+            <p>Apple may also provide App Store delivery, operating-system services, Apple Intelligence availability, and device backups under your Apple settings and Apple’s policies. Those services are not Coinstead servers.</p>
+          </article>
+
+          <article class="content-card" id="exports">
+            <h2>8. Exports, backups, and restore files</h2>
+            <p>Coinstead can create a full backup and a transaction CSV export. A full backup can contain categories, goals, merchant rules, income, recurring plan items, starting balances, debt information, statement metadata, transactions, and other settings needed for restoration. A transaction CSV contains transaction details.</p>
+            <p>You choose the destination using Apple’s document and share interfaces. If you save to iCloud Drive, another cloud provider, email, or a third-party app, that provider receives the file under its own privacy terms. Coinstead does not control copies after export.</p>
+            <p>Restoring a backup reads the file you select and replaces the app’s local financial records with the backup contents after confirmation.</p>
+          </article>
+
+          <article class="content-card" id="security">
+            <h2>9. App lock and device backups</h2>
+            <p>You may enable Coinstead’s optional app lock. Authentication is handled by iOS using Face ID or the device passcode. Coinstead receives only the success or failure result; it does not receive or store your face data or passcode.</p>
+            <p>The app lock is an access gate, not a claim that Coinstead separately encrypts its database. Device-level protections are provided by iOS and depend on your passcode, device, and system settings.</p>
+            <p>Coinstead does not implement cloud sync. However, iOS device backups may include app data according to your iCloud or computer-backup settings. Apple controls that backup process.</p>
+          </article>
+
+          <article class="content-card" id="control">
+            <h2>10. Retention, deletion, and your control</h2>
+            <p>Local records remain on your device until you edit or delete them, use “Delete All Financial Data” in Settings, or remove the app and its data through iOS. Coinstead does not set a remote retention period because it does not receive a remote copy of those records.</p>
+            <p>Deleting app data does not delete backup or export files you previously saved elsewhere, information you shared with another app, clipboard history maintained by the system, support emails, or copies included in device backups. Those must be managed at their destination.</p>
+            <p>Coinstead lets you delete transactions, categories, saved scenarios, and other records through the relevant app interfaces. Deleting a category does not delete its transactions; you can reassign them or leave them uncategorized.</p>
+          </article>
+
+          <article class="content-card" id="support-privacy">
+            <h2>11. Support messages</h2>
+            <p>If you email support, the email address, message, and any attachments you choose to send leave Coinstead and are delivered to the developer’s personal Gmail inbox. They are processed by the email services used by you and the developer and are used to understand and respond to your request.</p>
+            <p>Support messages are archived after the request has been handled. Archiving is not deletion: an archived message remains stored in the Gmail account until it is later deleted and may remain in service-provider backups according to the provider’s retention practices.</p>
+            <p>Please do not attach bank statements, backups, full transaction exports, account numbers, passwords, or other sensitive financial information. A redacted screenshot and the app/iOS version are usually more useful.</p>
+          </article>
+
+          <article class="content-card" id="website">
+            <h2>12. This website</h2>
+            <p>This site uses static HTML, CSS, and a small local script for navigation. Coinstead does not place analytics, advertising pixels, tracking scripts, external fonts, or application cookies on the site.</p>
+            <p>If this site is hosted on GitHub Pages, GitHub receives ordinary web requests and may process technical information such as IP address, browser information, requested pages, and timestamps under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>. GitHub may also make aggregate repository or site traffic information available to the repository owner.</p>
+          </article>
+
+          <article class="content-card" id="disclaimer">
+            <h2>13. Financial information, not advice</h2>
+            <p>Coinstead provides financial information and goal-based illustrations. It does not provide financial, investment, tax, accounting, or legal advice; decide what you can afford; recommend a specific investment; or guarantee an outcome.</p>
+            <p>Scores describe alignment with the goals and data you enter, not an objective measure of financial health. Debt estimates and Garden Planning projections rely on stated assumptions and can differ from real outcomes. Garden Planning is intended for everyday purchases and personal loans, not mortgages, and does not include mortgage-specific costs or lending requirements.</p>
+          </article>
+
+          <article class="content-card" id="changes">
+            <h2>14. Changes and contact</h2>
+            <p>This policy may be updated when Coinstead’s features, legal requirements, or data practices change. The effective date at the top will be revised when that happens.</p>
+            <p>Questions about this policy can be sent to <a href="mailto:khoushinskyl@gmail.com">khoushinskyl@gmail.com</a>.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div>
+        <div class="footer-brand"><img src="assets/coinstead-icon.png" alt="" width="36" height="36"><span>Coinstead</span></div>
+        <p class="footer-copy">Your finances stay yours.</p>
+        <p class="disclaimer">Coinstead provides financial information and goal-based illustrations, not financial, investment, tax, or legal advice. Projections do not guarantee an outcome.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Overview</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+        <span>© <span data-current-year>2026</span> Coinstead</span>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

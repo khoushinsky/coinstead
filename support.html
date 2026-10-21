@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Coinstead support, import guidance, privacy help, troubleshooting, and frequently asked questions.">
+  <meta name="theme-color" content="#021d17">
+  <title>Support — Coinstead</title>
+  <link rel="icon" href="assets/coinstead-icon.png">
+  <link rel="apple-touch-icon" href="assets/coinstead-icon.png">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Coinstead home">
+        <img src="assets/coinstead-icon.png" alt="" width="42" height="42">
+        <span>Coinstead</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation"><span></span></button>
+      <nav class="site-nav" id="site-navigation" data-open="false" aria-label="Primary navigation">
+        <a href="index.html">Overview</a>
+        <a href="index.html#features">Features</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html" aria-current="page">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section page-hero" aria-labelledby="page-title">
+      <p class="eyebrow">Coinstead support</p>
+      <h1 id="page-title">A little care goes a long way.</h1>
+      <p class="lede">Find practical answers for importing statements, reviewing categories, protecting local data, and understanding Coinstead’s goal-based calculations.</p>
+    </section>
+
+    <section class="section section-compact" aria-labelledby="contact-title">
+      <div class="contact-grid">
+        <article class="contact-card accent">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Still stuck?</h2>
+          <p>Send a short description of what happened, your iPhone model, iOS version, and the Coinstead version shown in Settings.</p>
+          <a class="contact-link" href="mailto:khoushinskyl@gmail.com?subject=Coinstead%20Support">khoushinskyl@gmail.com</a>
+          <p>Messages are archived after the support request has been handled.</p>
+        </article>
+        <article class="contact-card">
+          <h3>Keep sensitive data out of support email</h3>
+          <p>Please do not attach bank statements, Coinstead backups, full transaction exports, account numbers, passwords, or unredacted financial screenshots.</p>
+          <p>If an image helps, crop or cover names, account details, merchant descriptions, and balances that are not needed to explain the issue.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="faq-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Frequently asked questions</p>
+          <h2 id="faq-title">Help your data take root.</h2>
+        </div>
+        <p>These answers describe Coinstead 1.0’s current iPhone workflow.</p>
+      </div>
+
+      <div class="faq-list">
+        <details>
+          <summary>Which statement files can I import?</summary>
+          <p>Coinstead accepts CSV, plain-text, and text-readable PDF statements. It reads common bank layouts and can ask you to map CSV columns when the format is unfamiliar. A scanned PDF made only of images is not text-readable and may need to be downloaded from your bank as a CSV or accessible PDF first.</p>
+        </details>
+
+        <details>
+          <summary>How do I import a statement from Downloads or another app?</summary>
+          <p>In Coinstead, choose Import and use the file picker to select the statement from Files or Downloads. You can also open the statement in Files, your bank app, or another document app, tap Share, and choose Coinstead. The app reads the shared copy and starts the import. Coinstead deletes only its private temporary Inbox copy; the original file remains where you saved it.</p>
+        </details>
+
+        <details>
+          <summary>Will leaving Review discard my imported transactions?</summary>
+          <p>No. Valid transactions are saved before categorization begins. Unresolved items temporarily use Other and remain in Review. You can stop, close the app, and continue later without importing the statement again.</p>
+        </details>
+
+        <details>
+          <summary>Why is a transaction still marked Other?</summary>
+          <p>Other can be a final category or a temporary holding label. An item stays in Review until you choose a category or explicitly confirm Other. When you confirm a merchant, Coinstead saves a local matching rule and applies it to similar unresolved descriptions where the existing rule precedence allows.</p>
+        </details>
+
+        <details>
+          <summary>What is the difference between Apple Intelligence and the ChatGPT handoff?</summary>
+          <p>Apple Intelligence uses Apple’s on-device language model on compatible iPhones and works in small review batches. Coinstead sends the model unresolved merchant text, transaction type, and your active category names—not the original statement file. The ChatGPT handoff is a separate, optional action: Coinstead prepares one request with all unresolved descriptions and category names, then you choose whether to share or copy it to ChatGPT. Coinstead does not call the OpenAI API automatically.</p>
+        </details>
+
+        <details>
+          <summary>What if Apple Intelligence is unavailable?</summary>
+          <p>The core import and categorization workflow does not depend on Apple Intelligence. Coinstead still applies its local merchant library, your saved rules, and prior confirmed categories. You can use quick categories, review manually, or choose the optional ChatGPT handoff. Apple Intelligence itself requires a supported iPhone, a compatible iOS version, and Apple Intelligence enabled in Settings.</p>
+        </details>
+
+        <details>
+          <summary>Can I change categories and merchant presets?</summary>
+          <p>Yes. In Settings, you can add, edit, or delete categories—including preset categories—and change automatic merchant mappings. If you delete a category, Coinstead can reassign its transactions or leave them uncategorized; transactions are not deleted. Pending classifications that point to a deleted category fall back to Other.</p>
+        </details>
+
+        <details>
+          <summary>Does Coinstead upload or sell my financial data?</summary>
+          <p>Coinstead has no account, advertising, analytics SDK, or Coinstead-operated cloud service, and the iPhone workflow does not automatically upload financial records to the developer. Information can leave the app when you choose an export, share sheet destination, external link, support email, or ChatGPT handoff. iOS device backups may also include app data under your Apple settings. See the <a href="privacy.html">Privacy Policy</a> for the exact boundaries.</p>
+        </details>
+
+        <details>
+          <summary>How does the optional app lock work?</summary>
+          <p>When enabled, Coinstead asks iOS to authenticate you with Face ID or the device passcode. Coinstead receives only whether authentication succeeded. It does not receive or store your face data or passcode. The app lock is an access gate and relies on iOS device security.</p>
+        </details>
+
+        <details>
+          <summary>How do I back up or move my Coinstead data?</summary>
+          <p>Open Settings and create a full backup, then choose where to save it with the iOS file interface. The backup contains sensitive financial records, so store it somewhere you trust. To move data, install Coinstead on the destination iPhone and use Restore Backup. Review the confirmation carefully because restoring replaces the app’s current local records.</p>
+        </details>
+
+        <details>
+          <summary>How do I remove my data?</summary>
+          <p>You can delete individual transactions, categories, scenarios, and other editable records in the app. Settings also offers Delete All Financial Data for the local Coinstead database and goals. Files you exported, backups you saved, content shared with other apps, support messages, and copies in device backups are separate and must be removed at their destination.</p>
+        </details>
+
+        <details>
+          <summary>What does the goal-alignment score mean?</summary>
+          <p>It compares the month’s recorded activity with the goals and priorities you entered. It is not an objective rating of financial health and does not determine whether a choice is right for you. Incomplete imports, missing income, or unusual months can change the result.</p>
+        </details>
+
+        <details>
+          <summary>What does Garden Planning calculate?</summary>
+          <p>Garden Planning illustrates how a hypothetical cash or financed purchase could change cumulative savings and investment accumulation, using the historical baseline and assumptions shown in the app. It can compare financing with waiting and saving, but it does not alter your actual records. It assumes no investment returns, inflation, salary increases, or behaviour changes and is not designed for mortgages.</p>
+        </details>
+
+        <details>
+          <summary>Is Coinstead financial or investment advice?</summary>
+          <p>No. Coinstead provides financial information and goal-based illustrations, not financial, investment, tax, accounting, or legal advice. It does not decide what you can afford, recommend specific investments, or guarantee results. Consider your circumstances and, when appropriate, a qualified professional.</p>
+        </details>
+
+        <details>
+          <summary>What should I include in a bug report?</summary>
+          <p>Include the action you took, what you expected, what happened, whether the issue repeats, your iPhone model, iOS version, and Coinstead version. For import problems, describe the bank and file type without attaching the statement. If a redacted sample is genuinely necessary, support can first suggest a safe way to create one.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section section-compact" aria-labelledby="privacy-help-title">
+      <div class="cta-band">
+        <div>
+          <h2 id="privacy-help-title">Want the full data-flow picture?</h2>
+          <p>The privacy policy explains local storage, statement handling, Apple Intelligence, ChatGPT, exports, device backups, and support messages in plain language.</p>
+        </div>
+        <a class="button button-secondary" href="privacy.html">Read the Privacy Policy</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div>
+        <div class="footer-brand"><img src="assets/coinstead-icon.png" alt="" width="36" height="36"><span>Coinstead</span></div>
+        <p class="footer-copy">Your finances stay yours.</p>
+        <p class="disclaimer">Coinstead provides financial information and goal-based illustrations, not financial, investment, tax, or legal advice. Projections do not guarantee an outcome.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Overview</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+        <span>© <span data-current-year>2026</span> Coinstead</span>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
