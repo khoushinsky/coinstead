@@ -47,6 +47,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -354,6 +355,9 @@ h3 {
 
 .phone-frame img {
   width: 100%;
+  height: auto;
+  aspect-ratio: 644 / 1400;
+  object-fit: contain;
   border-radius: 40px;
 }
 
@@ -508,6 +512,9 @@ h3 {
 
 .screenshot-shell img {
   width: 100%;
+  height: auto;
+  aspect-ratio: 644 / 1400;
+  object-fit: contain;
   border-radius: 26px;
 }
 
