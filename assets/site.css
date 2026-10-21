@@ -492,7 +492,7 @@ h3 {
 
 .screenshot-track {
   display: grid;
-  grid-template-columns: repeat(5, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
   align-items: start;
 }
@@ -502,20 +502,30 @@ h3 {
 }
 
 .screenshot-shell {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
   overflow: hidden;
   padding: 6px;
   border: 1px solid var(--line);
-  border-radius: 32px;
+  border-radius: 26px;
   background: #000;
   box-shadow: 0 26px 60px rgba(0, 0, 0, 0.22);
+  text-decoration: none;
 }
 
 .screenshot-shell img {
   width: 100%;
-  height: auto;
-  aspect-ratio: 644 / 1400;
-  object-fit: contain;
-  border-radius: 26px;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 20px;
+  transition: transform 220ms ease;
+}
+
+.screenshot-shell:hover img {
+  transform: scale(1.015);
 }
 
 .screenshot-card figcaption {
@@ -528,6 +538,19 @@ h3 {
   display: block;
   color: var(--cream);
   font-size: 0.95rem;
+}
+
+.full-shot {
+  display: inline-block;
+  margin-top: 0.35rem;
+  color: var(--leaf-bright);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.full-shot:hover {
+  color: var(--cream);
 }
 
 .data-note {
@@ -773,16 +796,7 @@ h3 {
   }
 
   .screenshot-track {
-    overflow-x: auto;
-    grid-template-columns: repeat(5, 250px);
-    padding: 0 20px 1.3rem;
-    margin-inline: -20px;
-    scroll-snap-type: x mandatory;
-    scrollbar-color: var(--forest-700) transparent;
-  }
-
-  .screenshot-card {
-    scroll-snap-align: start;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -926,9 +940,16 @@ h3 {
   }
 
   .screenshot-track {
+    overflow-x: auto;
     grid-template-columns: repeat(5, min(74vw, 260px));
     margin-inline: -14px;
-    padding-inline: 14px;
+    padding: 0 14px 1.1rem;
+    scroll-snap-type: x mandatory;
+    scrollbar-color: var(--forest-700) transparent;
+  }
+
+  .screenshot-card {
+    scroll-snap-align: start;
   }
 
   .policy-toc {
